@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blakitch — Make the Best Sustenance Decisions</title>
+<meta name="description" content="Blakitch helps chefs and bartenders make informed culinary equipment and sustenance decisions — from the shopping dish to the last tool on the line.">
+<link rel="icon" type="image/png" href="assets/blakitch-logo-transparent.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/blakitch-logo-white.png" alt="Blakitch" class="brand-mark">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <div class="nav-item">
+        <button class="dropdown-trigger" aria-expanded="false">
+          Our Services
+          <svg viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <div class="dropdown-panel">
+          <a class="dropdown-link" href="services.html#table-setup">
+            <span class="dd-icon"><svg viewBox="0 0 80 80"><path d="M24 12 C24 24 34 24 34 34 L34 60" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M46 12 C46 24 56 24 56 34 L56 60" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><rect x="24" y="60" width="32" height="10" rx="5" fill="currentColor"/></svg></span>
+            <strong>Table Setup</strong>
+            <span>The visual headline for your brand</span>
+          </a>
+          <a class="dropdown-link" href="services.html#bar-setup">
+            <span class="dd-icon"><svg viewBox="0 0 80 80"><rect x="34" y="10" width="10" height="34" rx="5" fill="currentColor"/><path d="M39 40 C15 46 15 66 39 72" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M39 40 C63 46 63 66 39 72" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span>
+            <strong>Bar Setup</strong>
+            <span>Built for a bar that never stops</span>
+          </a>
+          <a class="dropdown-link" href="services.html#restaurant-setup">
+            <span class="dd-icon"><svg viewBox="0 0 80 80"><circle cx="40" cy="46" r="26" fill="none" stroke="currentColor" stroke-width="5"/><rect x="62" y="38" width="16" height="10" rx="5" fill="currentColor"/></svg></span>
+            <strong>Restaurant Setup</strong>
+            <span>Dinnerware that matches your reputation</span>
+          </a>
+        </div>
+      </div>
+      <a href="about.html">About Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary">
+        Contact us
+        <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile full-page dropdown -->
+</header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="mobile-accordion">
+        <button class="mobile-accordion-trigger">
+          Our Services
+          <svg viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mobile-accordion-panel">
+          <a href="services.html#table-setup">Table Setup</a>
+          <a href="services.html#bar-setup">Bar Setup</a>
+          <a href="services.html#restaurant-setup">Restaurant Setup</a>
+        </div>
+      </li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="mobile-menu-foot">
+      <a href="contact.html" class="btn btn-primary btn-block">
+        Contact us
+        <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="mobile-socials">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M15 8.5H13.5C12.9 8.5 12.5 8.9 12.5 9.5V11H15L14.6 13.5H12.5V20H10V13.5H8V11H10V9.2C10 7.1 11.4 5.5 13.5 5.5H15V8.5Z" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.6"/><circle cx="16.6" cy="7.4" r="1" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-inner">
+        <h1 class="hero-title" data-split>Make the best sustenance decisions. Ask Blakitch.</h1>
+        <p class="hero-sub">We help chefs and bartenders make informed decisions while offering quality culinary equipment — to help bring out the beauty in what you create, in and out of the kitchen.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">
+            Contact us
+            <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="about.html" class="btn btn-outline">Get to know us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap" style="margin-top:56px;">
+      <div class="photo reveal" style="aspect-ratio:21/9; position:relative;" data-parallax>
+        <div class="hero-blob-wrap" style="right:-8%; top:-20%; width:60%; height:140%;">
+          <svg viewBox="-100 -100 200 200"><path data-morph-blob fill="#E5231C" opacity="0.14"/></svg>
+        </div>
+        <img class="photo-image" src="assets/kitchen-showreel.png" alt="Chefs preparing dishes together in a bright commercial kitchen">
+        <div class="photo-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4L20 12L6 20V4Z"/></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <p class="eyebrow center">Our Process</p>
+      <h2 class="section-title center">We pride ourselves in offering customer satisfaction through our strategic problem-discovery process.</h2>
+
+      <div class="process" style="margin-top:56px;">
+        <div class="process-progress" data-progress></div>
+        <div class="process-step reveal">
+          <span class="process-num">01</span>
+          <h3>Detailed Consultation</h3>
+          <p>We take our time in communicating effectively with customers to ensure goals and problems are properly understood.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">02</span>
+          <h3>Discovery Report</h3>
+          <p>Details from our discovery are presented for clarity and the decision-making process.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">03</span>
+          <h3>Proposal Presentation</h3>
+          <p>Our team provides you with a proposal of the right service and products you need to achieve the desired result.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">04</span>
+          <h3>Delivery</h3>
+          <p>Voilà. We make delivery, take back feedback and recommendations, and cheers to a toast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR SERVICES ============ -->
+  <section class="section section-tight" id="services">
+    <div class="wrap">
+      <p class="eyebrow center">Our Services</p>
+      <h2 class="section-title center">We tailor our services to fit the specific requirement, just for you.</h2>
+
+      <div class="service-block reveal">
+        <div class="photo photo--bar-left">
+          <div class="photo-bar"></div>
+        <img src="assets/table-with-food-thanksgiving-day 1.png" alt="Dinner table arranged with cookware, place settings and food">
+        </div>
+        <div class="service-copy">
+          <p class="eyebrow-num">01 — Table Setup</p>
+          <h3>Table Setup</h3>
+          <p>Make your table setup the visual marketing headline for selling your brand.</p>
+          <a href="services.html#table-setup" class="service-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="service-block reveal">
+        <div class="photo photo--bar-right">
+          
+          <div class="photo-bar"></div>
+          <img src="assets/table-with-food-thanksgiving-day 2.png" alt="Warmly lit bar counter with red stools and pendant lights">
+        </div>
+        <div class="service-copy">
+          <p class="eyebrow-num">02 — Bar Setup</p>
+          <h3>Bar Setup</h3>
+          <p>Setting up a bar is as complicated as a box puzzle. Let's help you choose the best setup.</p>
+          <a href="services.html#bar-setup" class="service-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="service-block reveal">
+        <div class="photo photo--bar-left">
+    
+          <div class="photo-bar"></div>
+          <img src="assets/half-empty-restaurant-table-with-plate-glass-cutlery 1.png" alt="Restaurant table dressed with white linen, glassware and greenery">
+        </div>
+        <div class="service-copy">
+          <p class="eyebrow-num">03 — Restaurant Setup</p>
+          <h3>Restaurant Setup</h3>
+          <p>The dinnerware you choose for your restaurant could make or mar your reputation. Let's help you.</p>
+          <a href="services.html#restaurant-setup" class="service-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT TEASER ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="split-block reveal">
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2 class="section-title">A full-service sustenance partner for working kitchens.</h2>
+          <p class="section-lede" style="margin-bottom:26px;">Blakitch helps chefs and bartenders make better purchase decisions — keeping the journey from shortlist to delivery seamless and, honestly, kind of enjoyable.</p>
+          <a href="about.html" class="service-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="photo photo--bar-bottom">
+          <div class="photo-bar"></div>
+          <img class="ceo" src="assets/Blakitch CEO.png" alt="Abdulhakeem Oganla, Founder and CEO of Blakitch">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WIDE BANNER ============ -->
+  <section class="wrap">
+    <div class="photo banner-photo reveal">
+      <img class="photo-image" src="assets/kitchen-team-banner.png" alt="Two chefs reviewing plated dishes in a commercial kitchen">
+    </div>
+  </section>
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="band-red">
+    <div class="wrap">
+      <p class="eyebrow center">Why Choose Us?</p>
+      <h2 class="section-title center">Built for a market that rewards consistency, not just taste.</h2>
+      <p class="section-lede center">We've built a reputation in the sustenance and culinary market, and we intend to hold that standard — bringing beauty and satisfaction to every recommendation we make.</p>
+      <div class="hero-actions center">
+        <a href="contact.html" class="btn btn-outline">
+          Book a free consultation
+          <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ============ REVIEWS ============ -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow center">Reviews</p>
+      <h2 class="section-title center">What our clients have been saying.</h2>
+      <div class="reviews-grid" style="margin-top:40px;">
+        <article class="review-card reveal">
+          <p class="review-quote">"Blakitch didn't sell me a mixer. They asked what I was mixing — then told me what I'd regret in a year."</p>
+          <div class="review-person">
+            <span class="review-avatar">HC</span>
+            <div><p class="review-name">Head Chef</p><p class="review-role">80-cover kitchen, Lagos</p></div>
+          </div>
+        </article>
+        <article class="review-card reveal">
+          <p class="review-quote">"We came in for glassware and left with a whole bar layout that actually made service faster."</p>
+          <div class="review-person">
+            <span class="review-avatar">BM</span>
+            <div><p class="review-name">Bar Manager</p><p class="review-role">Rooftop lounge, Victoria Island</p></div>
+          </div>
+        </article>
+        <article class="review-card reveal">
+          <p class="review-quote">"Honest is the word. They told us what to skip as much as what to buy — that's rare."</p>
+          <div class="review-person">
+            <span class="review-avatar">RO</span>
+            <div><p class="review-name">Restaurant Owner</p><p class="review-role">Ikoyi</p></div>
+          </div>
+        </article>
+      </div>
+      <p style="text-align:center; color: var(--muted-dim); font-size:0.85rem; margin-top:22px;">Sample testimonials shown while we collect quotes from real clients.</p>
+    </div>
+
+  </section>
+  <!-- ============ MARQUEE STRIP ============ -->
+  <div class="marquee-section">
+    <p class="marquee-label">What Blakitch stands for</p>
+    <div class="marquee-wrap">
+      <div class="marquee-track" data-marquee data-speed="34">
+        <span class="brand-chip">Sourced, not settled for</span>
+        <span class="brand-chip">Line-tested equipment</span>
+        <span class="brand-chip">Advisory before inventory</span>
+        <span class="brand-chip">Built for the working kitchen</span>
+        <span class="brand-chip">Sourced, not settled for</span>
+        <span class="brand-chip">Line-tested equipment</span>
+        <span class="brand-chip">Advisory before inventory</span>
+        <span class="brand-chip">Built for the working kitchen</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="section section-tight">
+    <div class="wrap">
+      <p class="eyebrow center">Our Portfolio</p>
+      <h2 class="section-title center">Some of our finest deliveries.</h2>
+
+      <div class="portfolio-grid" style="margin-top:40px;">
+        <div class="portfolio-item reveal">
+          <div class="photo photo--bar-bottom"><img class="photo-image" src="assets/portfolio-table-setup.png" alt="Restaurant table set with dinnerware, linen, glassware and greenery"><div class="photo-bar"></div></div>
+          <h4>Monty Restaurant</h4>
+          <p>Full ambience setup</p>
+        </div>
+        <div class="portfolio-item reveal">
+          <div class="photo photo--bar-bottom"><img class="photo-image" src="assets/portfolio-bar-setup.png" alt="Bartender pouring a cocktail at a backlit bar"><div class="photo-bar"></div></div>
+          <h4>Goodlife Restaurant</h4>
+          <p>Full ambience setup</p>
+        </div>
+        <div class="portfolio-item reveal">
+          <div class="photo photo--bar-bottom"><img class="photo-image" src="assets/portfolio-restaurant-setup.png" alt="Restaurant professional arranging a finished dining table"><div class="photo-bar"></div></div>
+          <h4>Portside Restaurant</h4>
+          <p>Full ambience setup</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOIN OUR LIST ============ -->
+  <section class="section section-tight">
+    <div class="wrap">
+      <div class="joinlist reveal">
+        <div class="photo">
+          <img class="photo-image" src="assets/newsletter-chef-plating.png" alt="Chef finishing a plated dish with fresh herbs">
+        </div>
+        <div class="joinlist-copy">
+          <p class="eyebrow">Join Our List</p>
+          <h2 class="section-title">Be the first to know.</h2>
+          <p>Get updates on the latest developments in the culinary and sustenance space, plus our discounts and slash sales.</p>
+          <form class="joinlist-form">
+            <input type="email" required placeholder="Your email">
+            <button type="submit" class="btn btn-primary">
+              Subscribe
+              <svg viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+          <p class="form-note"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="assets/blakitch-logo-white.png" alt="Blakitch" class="footer-brand-mark">
+      <p class="footer-tagline">Equipment and sustenance advisory for chefs and bartenders who don't want to guess.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M15 8.5H13.5C12.9 8.5 12.5 8.9 12.5 9.5V11H15L14.6 13.5H12.5V20H10V13.5H8V11H10V9.2C10 7.1 11.4 5.5 13.5 5.5H15V8.5Z" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.6"/><circle cx="16.6" cy="7.4" r="1" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a href="contact.html">Feel free to reach us</a></li>
+        <li><a href="mailto:ceo@blakitch.com">ceo@blakitch.com</a></li>
+        <li><a href="tel:+2347012080337">+234 701 208 0337</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <div class="footer-bottom-mark">
+      <img src="assets/blakitch-logo-white.png" alt="">
+      <p class="footer-copy">&copy; <span data-year></span> Blakitch. All rights reserved.</p>
+    </div>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/gsap/gsap.min.js"></script>
+<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
